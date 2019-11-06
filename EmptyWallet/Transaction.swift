@@ -29,4 +29,5 @@ enum SpendingCategory {
     case entertainment
     case clothing
     case upkeep
+    case other
 }
