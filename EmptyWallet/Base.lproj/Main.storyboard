@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Piggy Bank-->
+        <!--This Week's Budget-->
         <scene sceneID="efI-nQ-ZBi">
             <objects>
                 <viewController id="JHb-mm-pcd" customClass="HomeViewController" customModule="EmptyWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Q4-xC-2LO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Piggy Bank" id="RcR-bN-GaQ">
+                    <navigationItem key="navigationItem" title="This Week's Budget" id="RcR-bN-GaQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6G8-2h-w4V"/>
                     </navigationItem>
                     <connections>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C400180D23734FF00027AF9B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400180C23734FF00027AF9B /* Transaction.swift */; };
 		C440B1D22372678A006986BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D12372678A006986BA /* AppDelegate.swift */; };
 		C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D32372678A006986BA /* SceneDelegate.swift */; };
 		C440B1D92372678A006986BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440B1D72372678A006986BA /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C400180C23734FF00027AF9B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C440B1CE2372678A006986BA /* EmptyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440B1D12372678A006986BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C440B1D32372678A006986BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				C440B1D32372678A006986BA /* SceneDelegate.swift */,
 				C440B1F32372695A006986BA /* HomeViewController.swift */,
 				C440B1D72372678A006986BA /* Main.storyboard */,
+				C400180C23734FF00027AF9B /* Transaction.swift */,
 				C440B1DA2372678C006986BA /* Assets.xcassets */,
 				C440B1DC2372678C006986BA /* LaunchScreen.storyboard */,
 				C440B1DF2372678C006986BA /* Info.plist */,
@@ -202,6 +205,7 @@
 			files = (
 				C440B1D22372678A006986BA /* AppDelegate.swift in Sources */,
 				C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */,
+				C400180D23734FF00027AF9B /* Transaction.swift in Sources */,
 				C440B1F42372695A006986BA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
