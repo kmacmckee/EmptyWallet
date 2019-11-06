@@ -10,7 +10,6 @@
 		C400180D23734FF00027AF9B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400180C23734FF00027AF9B /* Transaction.swift */; };
 		C400180F2373529E0027AF9B /* TransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400180E2373529D0027AF9B /* TransactionController.swift */; };
 		C400181123735CA80027AF9B /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400181023735CA80027AF9B /* TransactionViewController.swift */; };
-		C4001813237360D60027AF9B /* SpendingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4001812237360D60027AF9B /* SpendingCategory.swift */; };
 		C440B1D22372678A006986BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D12372678A006986BA /* AppDelegate.swift */; };
 		C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D32372678A006986BA /* SceneDelegate.swift */; };
 		C440B1D92372678A006986BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440B1D72372678A006986BA /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 		C400180C23734FF00027AF9B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C400180E2373529D0027AF9B /* TransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionController.swift; sourceTree = "<group>"; };
 		C400181023735CA80027AF9B /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		C4001812237360D60027AF9B /* SpendingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCategory.swift; sourceTree = "<group>"; };
 		C440B1CE2372678A006986BA /* EmptyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440B1D12372678A006986BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C440B1D32372678A006986BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				C400180C23734FF00027AF9B /* Transaction.swift */,
-				C4001812237360D60027AF9B /* SpendingCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C440B1D22372678A006986BA /* AppDelegate.swift in Sources */,
-				C4001813237360D60027AF9B /* SpendingCategory.swift in Sources */,
 				C400181123735CA80027AF9B /* TransactionViewController.swift in Sources */,
 				C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */,
 				C400180F2373529E0027AF9B /* TransactionController.swift in Sources */,

@@ -28,11 +28,15 @@ class TransactionViewController: UIViewController, UIPickerViewDataSource, UIPic
     
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return SpendingCategory.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return SpendingCategory(rawValue: row)?.description
     }
     
 
