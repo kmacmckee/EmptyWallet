@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7r-gm-VaH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Piggy Bank-->
+        <scene sceneID="efI-nQ-ZBi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="JHb-mm-pcd" customClass="HomeViewController" customModule="EmptyWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MQ4-u5-A4y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAK-1f-gaX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="195"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xir-VV-1g5">
+                                <rect key="frame" x="0.0" y="283" width="414" height="579"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Q4-xC-2LO" firstAttribute="bottom" secondItem="xir-VV-1g5" secondAttribute="bottom" id="4KE-an-Lo0"/>
+                            <constraint firstItem="MAK-1f-gaX" firstAttribute="leading" secondItem="1Q4-xC-2LO" secondAttribute="leading" id="5JD-iI-od5"/>
+                            <constraint firstItem="MAK-1f-gaX" firstAttribute="trailing" secondItem="1Q4-xC-2LO" secondAttribute="trailing" id="ACt-la-cfY"/>
+                            <constraint firstItem="1Q4-xC-2LO" firstAttribute="trailing" secondItem="xir-VV-1g5" secondAttribute="trailing" id="NnZ-JI-G9V"/>
+                            <constraint firstItem="MAK-1f-gaX" firstAttribute="height" secondItem="MQ4-u5-A4y" secondAttribute="height" multiplier="0.217634" id="drG-9E-vIZ"/>
+                            <constraint firstItem="xir-VV-1g5" firstAttribute="leading" secondItem="1Q4-xC-2LO" secondAttribute="leading" id="hNK-OD-xgj"/>
+                            <constraint firstItem="xir-VV-1g5" firstAttribute="top" secondItem="MAK-1f-gaX" secondAttribute="bottom" id="idg-8W-HcZ"/>
+                            <constraint firstItem="MAK-1f-gaX" firstAttribute="top" secondItem="1Q4-xC-2LO" secondAttribute="top" id="qRv-Pj-bgQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Q4-xC-2LO"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Piggy Bank" id="RcR-bN-GaQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6G8-2h-w4V"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="graphicView" destination="MAK-1f-gaX" id="LYx-cb-NPa"/>
+                        <outlet property="transactionTableView" destination="xir-VV-1g5" id="sBd-Ap-4Gb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fI3-Vl-Bd3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="161.38392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VHE-af-6qK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H7r-gm-VaH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jo1-8N-yjw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JHb-mm-pcd" kind="relationship" relationship="rootViewController" id="kog-XS-Gfm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUA-cN-23g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="161.38392857142856"/>
         </scene>
     </scenes>
 </document>

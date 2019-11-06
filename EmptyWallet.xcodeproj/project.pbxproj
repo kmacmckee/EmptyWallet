@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		C440B1D22372678A006986BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D12372678A006986BA /* AppDelegate.swift */; };
 		C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D32372678A006986BA /* SceneDelegate.swift */; };
-		C440B1D62372678A006986BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D52372678A006986BA /* ViewController.swift */; };
 		C440B1D92372678A006986BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440B1D72372678A006986BA /* Main.storyboard */; };
 		C440B1DB2372678C006986BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C440B1DA2372678C006986BA /* Assets.xcassets */; };
 		C440B1DE2372678C006986BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440B1DC2372678C006986BA /* LaunchScreen.storyboard */; };
 		C440B1E92372678C006986BA /* EmptyWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1E82372678C006986BA /* EmptyWalletTests.swift */; };
+		C440B1F42372695A006986BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1F32372695A006986BA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 		C440B1CE2372678A006986BA /* EmptyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440B1D12372678A006986BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C440B1D32372678A006986BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C440B1D52372678A006986BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C440B1D82372678A006986BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C440B1DA2372678C006986BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C440B1DD2372678C006986BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		C440B1E42372678C006986BA /* EmptyWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440B1E82372678C006986BA /* EmptyWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWalletTests.swift; sourceTree = "<group>"; };
 		C440B1EA2372678C006986BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C440B1F32372695A006986BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				C440B1D12372678A006986BA /* AppDelegate.swift */,
 				C440B1D32372678A006986BA /* SceneDelegate.swift */,
-				C440B1D52372678A006986BA /* ViewController.swift */,
+				C440B1F32372695A006986BA /* HomeViewController.swift */,
 				C440B1D72372678A006986BA /* Main.storyboard */,
 				C440B1DA2372678C006986BA /* Assets.xcassets */,
 				C440B1DC2372678C006986BA /* LaunchScreen.storyboard */,
@@ -200,9 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C440B1D62372678A006986BA /* ViewController.swift in Sources */,
 				C440B1D22372678A006986BA /* AppDelegate.swift in Sources */,
 				C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */,
+				C440B1F42372695A006986BA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
