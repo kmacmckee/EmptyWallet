@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct Transaction {
     
     let amount: Double
@@ -23,11 +24,4 @@ struct Transaction {
 }
 
 
-enum SpendingCategory {
-    case food
-    case travel
-    case entertainment
-    case clothing
-    case upkeep
-    case other
-}
+
