@@ -15,9 +15,9 @@ struct Transaction {
     let date: Date
     let recipient: String
     
-    var recurringDate: Date
-    var isRecurringPayment: Bool
-    var isSubscription: Bool
+    var recurringDate: Date?
+    var isRecurringPayment: Bool?
+    var isSubscription: Bool?
     
     var category: SpendingCategory
     

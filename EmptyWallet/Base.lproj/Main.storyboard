@@ -22,6 +22,61 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xir-VV-1g5">
                                 <rect key="frame" x="0.0" y="283" width="414" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="78" id="qML-if-UJh" customClass="TransactionTableViewCell" customModule="EmptyWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qML-if-UJh" id="h6A-M6-Xnt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hNY-ma-x3d">
+                                                    <rect key="frame" x="23" y="14" width="368" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sin-5a-gOb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4q-Al-IzY">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtv-mj-ETW">
+                                                                    <rect key="frame" x="0.0" y="29.5" width="275" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Gtv-mj-ETW" firstAttribute="height" secondItem="Sin-5a-gOb" secondAttribute="height" multiplier="0.41" id="yhh-jS-eYv"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7K-pp-AsB">
+                                                            <rect key="frame" x="285" y="0.0" width="83" height="50"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G7K-pp-AsB" firstAttribute="width" secondItem="h6A-M6-Xnt" secondAttribute="width" multiplier="1/5" id="AxM-hR-GRX"/>
+                                                <constraint firstItem="hNY-ma-x3d" firstAttribute="top" secondItem="h6A-M6-Xnt" secondAttribute="topMargin" constant="3" id="MjK-x2-0Uq"/>
+                                                <constraint firstItem="hNY-ma-x3d" firstAttribute="leading" secondItem="h6A-M6-Xnt" secondAttribute="leadingMargin" constant="3" id="WTF-RM-p5s"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hNY-ma-x3d" secondAttribute="bottom" constant="3" id="eXx-q1-hlE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hNY-ma-x3d" secondAttribute="trailing" constant="3" id="gOn-uE-te3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="G7K-pp-AsB" id="ftQ-up-BIq"/>
+                                            <outlet property="categoryLabel" destination="Gtv-mj-ETW" id="fE9-al-SD5"/>
+                                            <outlet property="recipientLabel" destination="M4q-Al-IzY" id="coz-Wc-44h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -40,7 +95,7 @@
                     <navigationItem key="navigationItem" title="This Week's Budget" id="RcR-bN-GaQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6G8-2h-w4V">
                             <connections>
-                                <segue destination="4CD-T3-nbH" kind="showDetail" id="zDO-Ba-otu"/>
+                                <segue destination="4CD-T3-nbH" kind="showDetail" identifier="toTransaction" id="zDO-Ba-otu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

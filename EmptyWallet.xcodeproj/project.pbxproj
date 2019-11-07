@@ -11,6 +11,7 @@
 		C400180F2373529E0027AF9B /* TransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400180E2373529D0027AF9B /* TransactionController.swift */; };
 		C400181123735CA80027AF9B /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400181023735CA80027AF9B /* TransactionViewController.swift */; };
 		C40018172374A6670027AF9B /* String+CurrencyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40018162374A6670027AF9B /* String+CurrencyFormatting.swift */; };
+		C40F37302374B55100A51D08 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F372F2374B55100A51D08 /* TransactionTableViewCell.swift */; };
 		C440B1D22372678A006986BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D12372678A006986BA /* AppDelegate.swift */; };
 		C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440B1D32372678A006986BA /* SceneDelegate.swift */; };
 		C440B1D92372678A006986BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440B1D72372678A006986BA /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		C400180E2373529D0027AF9B /* TransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionController.swift; sourceTree = "<group>"; };
 		C400181023735CA80027AF9B /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		C40018162374A6670027AF9B /* String+CurrencyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CurrencyFormatting.swift"; sourceTree = "<group>"; };
+		C40F372F2374B55100A51D08 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		C440B1CE2372678A006986BA /* EmptyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440B1D12372678A006986BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C440B1D32372678A006986BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				C440B1D32372678A006986BA /* SceneDelegate.swift */,
 				C40018152374A5F20027AF9B /* ViewControllers */,
 				C440B1D72372678A006986BA /* Main.storyboard */,
+				C40F372F2374B55100A51D08 /* TransactionTableViewCell.swift */,
 				C40018182374A7DA0027AF9B /* Extensions */,
 				C400180E2373529D0027AF9B /* TransactionController.swift */,
 				C4001814237360E70027AF9B /* Models */,
@@ -238,6 +241,7 @@
 			files = (
 				C440B1D22372678A006986BA /* AppDelegate.swift in Sources */,
 				C400181123735CA80027AF9B /* TransactionViewController.swift in Sources */,
+				C40F37302374B55100A51D08 /* TransactionTableViewCell.swift in Sources */,
 				C440B1D42372678A006986BA /* SceneDelegate.swift in Sources */,
 				C40018172374A6670027AF9B /* String+CurrencyFormatting.swift in Sources */,
 				C400180F2373529E0027AF9B /* TransactionController.swift in Sources */,

@@ -17,6 +17,8 @@ class TransactionViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var categoryPicker: UIPickerView!
     @IBOutlet weak var saveButton: UIButton!
     
+    var transactionController: TransactionController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
