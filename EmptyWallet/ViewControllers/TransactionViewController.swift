@@ -21,9 +21,18 @@ class TransactionViewController: UIViewController, UIPickerViewDataSource, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        amountTextField.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+        
         datePicker.datePickerMode = .date
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
+        
+    }
+    
+    @objc func myTextFieldDidChange(_ textField: UITextField) {
+        if let amountString = textField.text?.currencyInputFormatting() {
+            textField.text = amountString
+        }
     }
     
 
@@ -38,6 +47,12 @@ class TransactionViewController: UIViewController, UIPickerViewDataSource, UIPic
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return SpendingCategory(rawValue: row)?.description
     }
+    
+    
+    
+    
+    
+    
     
 
 }

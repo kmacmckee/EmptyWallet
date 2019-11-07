@@ -13,6 +13,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var graphicView: UIView!
     @IBOutlet weak var transactionTableView: UITableView!
     
+    let transactionController = TransactionController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         transactionTableView.delegate = self
