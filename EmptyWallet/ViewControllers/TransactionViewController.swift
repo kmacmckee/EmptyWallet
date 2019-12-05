@@ -52,6 +52,25 @@ class TransactionViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     
     
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        let date = datePicker.date
+        let selectedCategory = categoryPicker.selectedRow(inComponent: 0)
+
+        
+        guard let amountString = amountTextField.text?.replacingOccurrences(of: "$", with: ""),
+            let amountValue = NumberFormatter().number(from: amountString)?.doubleValue,
+            let recipient = recipientTextField.text,
+            let category = SpendingCategory(rawValue: selectedCategory) else { return }
+        
+        let newTransaction = Transaction(amount: amountValue, date: date, recipient: recipient, recurringDate: nil, isRecurringPayment: nil, isSubscription: nil, category: category)
+        
+        transactionController?.addTransaction(transaction: newTransaction)
+        
+        dismiss(animated: true) {
+            NotificationCenter.default.post(Notification(name: UIApplication.didBecomeActiveNotification))
+        }
+
+    }
     
     
     

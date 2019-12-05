@@ -18,18 +18,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(transactionController.getAllTransactions())
+
         transactionTableView.delegate = self
         transactionTableView.dataSource = self
+        transactionTableView.reloadData()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshTableView), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
+    
+    @objc func refreshTableView() {
+        transactionTableView.reloadData()
+    }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "MM - dd - yyyy"
+        
         for transaction in transactionController.getAllTransactions() {
             let date = dateFormatterPrint.string(from: transaction.date)
             if !transactionDates.contains(date) {
@@ -39,6 +45,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         return transactionDates.count
     }
+    
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return transactionDates[section]

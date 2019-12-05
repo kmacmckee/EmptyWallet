@@ -116,8 +116,8 @@
 			children = (
 				C440B1D12372678A006986BA /* AppDelegate.swift */,
 				C440B1D32372678A006986BA /* SceneDelegate.swift */,
-				C40018152374A5F20027AF9B /* ViewControllers */,
 				C440B1D72372678A006986BA /* Main.storyboard */,
+				C40018152374A5F20027AF9B /* ViewControllers */,
 				C40F372F2374B55100A51D08 /* TransactionTableViewCell.swift */,
 				C40018182374A7DA0027AF9B /* Extensions */,
 				C400180E2373529D0027AF9B /* TransactionController.swift */,
